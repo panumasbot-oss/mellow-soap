@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0e6">
+  <title>MELLOW SOAP | สบู่ธรรมชาติ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">M</span><span>MELLOW <small>SOAP</small></span></a>
+    <nav><a href="#products">สินค้า</a><a href="#about">เกี่ยวกับเรา</a><button class="cart-trigger" id="openCart">ตะกร้า <span id="cartCount">0</span></button></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">GENTLE CARE, EVERY DAY</p>
+        <h1>ดูแลผิวอย่างอ่อนโยน<br><em>ในแบบที่เป็นคุณ</em></h1>
+        <p class="hero-text">สบู่ก้อนที่ตั้งใจทำ เพื่อเติมช่วงเวลาธรรมดาให้กลายเป็นช่วงเวลาแห่งการดูแลตัวเอง</p>
+        <a class="primary-link" href="#products">เลือกชมสินค้า <span>↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="ภาพประกอบสบู่">
+        <div class="sun"></div><div class="soap soap-one"></div><div class="soap soap-two"></div>
+        <span class="leaf leaf-one">✦</span><span class="leaf leaf-two">✧</span>
+        <p>slow down<br>and feel good.</p>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>สบู่ก้อนโปรดของคุณ</h2></div><p>เรียบง่าย อ่อนโยน และใส่ใจในทุกวัน</p></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-symbol">m.</div>
+      <div><p class="eyebrow">ABOUT MELLOW</p><h2>ความสุขเล็ก ๆ<br>เริ่มต้นได้จากการดูแลตัวเอง</h2>
+      <p>MELLOW SOAP เชื่อว่าการดูแลผิวไม่จำเป็นต้องซับซ้อน เราจึงคัดสรรสบู่ 2 สูตรที่เป็นมิตรกับกิจวัตรประจำวันของคุณ</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">M</span><span>MELLOW <small>SOAP</small></span></a><p>Made with care · MELLOW SOAP</p></footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="ตะกร้าสินค้า">
+    <div class="drawer-head"><h2>ตะกร้าสินค้า</h2><button class="icon-button" id="closeCart" aria-label="ปิด">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-bottom"><div class="total-row"><span>ยอดรวม</span><strong id="cartTotal">฿0</strong></div><button class="primary-button" id="checkoutButton">ดำเนินการสั่งซื้อ</button></div>
+  </aside>
+
+  <dialog id="checkoutDialog">
+    <form id="checkoutForm" class="checkout-form">
+      <div class="drawer-head"><div><p class="eyebrow">CHECKOUT</p><h2>ข้อมูลจัดส่ง</h2></div><button type="button" class="icon-button" id="closeCheckout">×</button></div>
+      <div class="form-grid">
+        <label>ชื่อผู้รับ<input name="customerName" required autocomplete="name"></label>
+        <label>เบอร์โทรศัพท์<input name="phone" required inputmode="tel" autocomplete="tel"></label>
+        <label class="full">ที่อยู่<input name="address" required autocomplete="street-address"></label>
+        <label>ตำบล / แขวง<input name="subdistrict" required></label>
+        <label>อำเภอ / เขต<input name="district" required></label>
+        <label>จังหวัด<input name="province" required></label>
+        <label>รหัสไปรษณีย์<input name="postalCode" required inputmode="numeric" maxlength="5"></label>
+      </div>
+      <p class="form-note">ระบบนี้เป็นการบันทึกคำสั่งซื้อเพื่อทดสอบ ยังไม่รองรับการชำระเงินจริง</p>
+      <button class="primary-button" type="submit">ยืนยันคำสั่งซื้อ</button>
+      <p id="checkoutMessage" class="message" role="status"></p>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
