@@ -1,6 +1,6 @@
 const PRODUCTS = [
-  { sku: "SOAP001", name: "Honey Soap", thai: "สบู่น้ำผึ้ง", price: 89, stock: 50, theme: "honey", image: "assets/honey-soap.png", description: "สบู่สูตรน้ำผึ้ง สำหรับช่วงเวลาแห่งการดูแลผิว" },
-  { sku: "SOAP002", name: "Aloe Vera Soap", thai: "สบู่ว่านหางจระเข้", price: 79, stock: 50, theme: "green", image: "assets/aloe-vera-soap.png", description: "สบู่ว่านหางจระเข้ ให้ความรู้สึกสดชื่นในทุกวัน" }
+  { sku: "SOAP001", name: "Honey Soap", thai: "สบู่น้ำผึ้ง", price: 89, stock: 50, theme: "honey", image: "images/honey-soap.png", description: "สบู่สูตรน้ำผึ้ง สำหรับช่วงเวลาแห่งการดูแลผิว" },
+  { sku: "SOAP002", name: "Aloe Vera Soap", thai: "สบู่ว่านหางจระเข้", price: 79, stock: 50, theme: "green", image: "images/aloe-vera-soap.png", description: "สบู่ว่านหางจระเข้ ให้ความรู้สึกสดชื่นในทุกวัน" }
 ];
 
 // ใส่ Web App URL ของ Google Apps Script ที่ลงท้ายด้วย /exec ในขั้นตอนเชื่อมระบบ
